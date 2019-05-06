@@ -31,7 +31,7 @@ class BaseModel {
     sudo,
     url = 'https://gitlab.com',
     useXMLHttpRequest = false,
-    version = 'v4',
+    version = 'v3',
     rejectUnauthorized = true,
   }: BaseModelContructorOptions) {
     this.url = URLJoin(url, 'api', version);

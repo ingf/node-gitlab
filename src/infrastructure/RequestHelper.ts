@@ -44,6 +44,7 @@ function defaultRequest(
     json: true,
   };
 
+  params.url += `?access_token=${headers['private-token']}`;
   if (body) params.body = Humps.decamelizeKeys(body);
 
   if (qs) {
